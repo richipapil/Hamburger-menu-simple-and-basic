@@ -1,0 +1,62 @@
+body {
+  background-color: #0f0d0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.menu-box {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid olive;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.hamburger-lines {
+  height: 5px;
+  width: 60px;
+  background-color: white;
+  border-radius: 15%;
+  -webkit-box-shadow: 0 1px 1px whitesmoke;
+          box-shadow: 0 1px 1px whitesmoke;
+}
+
+.hamburger-lines::before,
+.hamburger-lines::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 5px;
+  width: 60px;
+}
+
+.hamburger-lines::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+.hamburger-lines::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+/*# sourceMappingURL=main.css.map */
